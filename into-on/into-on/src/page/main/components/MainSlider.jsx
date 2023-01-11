@@ -3,72 +3,72 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const MainSlider = () =>{
-    const settings = {
-        dots:true,
-        infinite: true,
-        autoplay: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        variableWidth: true,
-        centerPadding: "0px",
-      };
-      return (
-        <Container>
-          <StyledSlide {...settings}>
-            <div>
-              <ImageBox
-                id="0"
-                url={
-                  "http://intoon.newbird0412.gethompy.com/wp-content/uploads/2018/10/main1-1.jpg"
-                }>
-                  <TitleBox>
-beauty of senses & joy of challenges</TitleBox>
-                  <ContentBox>Our design creatively tells your brand's story.</ContentBox>
-                </ImageBox>
-            </div>
-            <div>
-              <ImageBox
-                id="1"
-                url={
-                  "http://intoon.newbird0412.gethompy.com/wp-content/uploads/2018/10/main2-1.jpg"
-                }
-              >
-                  <TitleBox>
-beauty of senses & joy of challenges</TitleBox>
-                  <ContentBox>Our design creatively tells your brand's story.</ContentBox>
-                </ImageBox>
-            </div>
-            <div>
-              <ImageBox
-                id="2"
-                url={
-                    "http://intoon.newbird0412.gethompy.com/wp-content/uploads/2018/10/main3-2.jpg"
-                }
-              >
-                <TitleBox>
-beauty of senses & joy of challenges</TitleBox>
-                  <ContentBox>Our design creatively tells your brand's story.</ContentBox>
-                </ImageBox>
-            </div>
-            <div>
-              <ImageBox
-                id="3"
-                url={
-                 "http://intoon.newbird0412.gethompy.com/wp-content/uploads/2018/10/main4-1.jpg"
-                }
-              >
-                <TitleBox>
-beauty of senses & joy of challenges</TitleBox>
-                  <ContentBox>Our design creatively tells your brand's story.</ContentBox>
-                </ImageBox>
-            </div>
-          </StyledSlide>
-        </Container>
-      );
-
-}
+const MainSlider = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true,
+    centerPadding: "0px",
+  };
+  return (
+    <Container>
+      <StyledSlide {...settings}>
+        <div>
+          <ImageBox
+            id="0"
+            url={
+              "http://intoon.newbird0412.gethompy.com/wp-content/uploads/2018/10/main1-1.jpg"
+            }
+          ></ImageBox>
+          <TitleBox>beauty of senses & joy of challenges</TitleBox>
+          <ContentBox>
+            Our design creatively tells your brand's story.
+          </ContentBox>
+        </div>
+        <div>
+          <ImageBox
+            id="1"
+            url={
+              "http://intoon.newbird0412.gethompy.com/wp-content/uploads/2018/10/main2-1.jpg"
+            }
+          ></ImageBox>
+          <TitleBox>beauty of senses & joy of challenges</TitleBox>
+          <ContentBox>
+            Our design creatively tells your brand's story.
+          </ContentBox>
+        </div>
+        <div>
+          <ImageBox
+            id="2"
+            url={
+              "http://intoon.newbird0412.gethompy.com/wp-content/uploads/2018/10/main3-2.jpg"
+            }
+          ></ImageBox>
+          <TitleBox>beauty of senses & joy of challenges</TitleBox>
+          <ContentBox>
+            Our design creatively tells your brand's story.
+          </ContentBox>
+        </div>
+        <div>
+          <ImageBox
+            id="3"
+            url={
+              "http://intoon.newbird0412.gethompy.com/wp-content/uploads/2018/10/main4-1.jpg"
+            }
+          ></ImageBox>
+          <TitleBox>beauty of senses & joy of challenges</TitleBox>
+          <ContentBox>
+            Our design creatively tells your brand's story.
+          </ContentBox>
+        </div>
+      </StyledSlide>
+    </Container>
+  );
+};
 
 const Container = styled.div`
   width: 100%;
@@ -78,14 +78,6 @@ const Container = styled.div`
   position: relative;
   bottom: 85px;
   text-align: center;
-  font-size: 30px;
-  font-family: 'Noto Sans KR', 'NanumSquare', dotum, 'ë‹ì›€', sans-serif;
-  font-weight: 400;
-    letter-spacing: 0px;
-    font-style: normal;
-    line-height: 1.9;
-    font-size: 18px;
-
 `;
 
 const ImageBox = styled.div`
@@ -106,14 +98,14 @@ const StyledSlide = styled(Slider)`
     overflow: hidden;
     animation: zoom-in 9s ease infinite;
 
-  @keyframes zoom-in {
-    0%{
-      transform: scale( 1 );
+    @keyframes zoom-in {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.2);
+      }
     }
-    100%{
-      transform: scale( 1.2 );
-    }
-  }
   }
   .slick-slider {
     display: flex;
@@ -124,21 +116,37 @@ const StyledSlide = styled(Slider)`
   }
   .slick-dots {
     position: absolute;
-    /* top: 26rem; */
+    top: 50rem;
   }
 `;
 
 const TitleBox = styled.div`
-width:100%;
-height:100%;
-z-index:999;
-//color:#fff;
-`
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Noto Sans KR", "NanumSquare", dotum, "ë‹ì›€", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-style: normal;
+  line-height: 1.9;
+  position: relative;
+  bottom: 400px;
+`;
 
 const ContentBox = styled.div`
-width:100%;
-height:100%;
-z-index:999;
-//color:#fff;
-`
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Noto Sans KR", "NanumSquare", dotum, "ë‹ì›€", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-style: normal;
+  line-height: 1.9;
+  position: relative;
+  bottom: 400px;
+`;
 export default MainSlider;
