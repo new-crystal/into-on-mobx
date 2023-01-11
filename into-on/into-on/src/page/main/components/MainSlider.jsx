@@ -115,6 +115,7 @@ const StyledSlide = styled(Slider)`
     height: 100%;
   }
   .slick-dots {
+    display: block;
     position: absolute;
     top: 50rem;
   }
