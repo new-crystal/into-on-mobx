@@ -76,6 +76,7 @@ const TextBox = styled.div`
     margin-right: 45px;
     :hover {
       color: red;
+      text-decoration: underline;
     }
   }
 `;
