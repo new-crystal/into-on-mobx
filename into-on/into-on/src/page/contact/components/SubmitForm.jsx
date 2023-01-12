@@ -42,7 +42,7 @@ const FormInput = styled.input`
   padding: 8px 15px;
   color: #aaa9a9;
   font-size: 13px;
-  width: 90%;
+  width: 80%;
 `;
 
 const FormTextArea = styled.textarea`
@@ -52,12 +52,12 @@ const FormTextArea = styled.textarea`
   padding: 8px 15px;
   color: #aaa9a9;
   font-size: 13px;
-  width: 90%;
+  width: 80%;
 `;
 
 const FooterBox = styled.div`
   margin-top: 30px;
-  width: 94%;
+  width: 84%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,5 +77,6 @@ const SubmitBtn = styled.button`
   color: #ffffff;
   background: #e71e38;
   border: 0;
+  margin-bottom: 50px;
 `;
 export default SubmitForm;

@@ -15,6 +15,7 @@ const SubmitText = () => {
 };
 
 const Container = styled.div`
+  margin-top: 30px;
   display: flex;
   justify-content: baseline;
   flex-direction: column;
@@ -22,7 +23,7 @@ const Container = styled.div`
   text-align: left;
 `;
 const SubmitTitle = styled.p`
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 20px;
   font-size: 30px;
   color: #e71e38;

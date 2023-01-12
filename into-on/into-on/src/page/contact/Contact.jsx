@@ -23,5 +23,7 @@ const TextContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
 `;
 export default Contact;
