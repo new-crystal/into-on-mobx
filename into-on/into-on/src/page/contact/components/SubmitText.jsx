@@ -19,7 +19,7 @@ const Container = styled.div`
   display: flex;
   justify-content: baseline;
   flex-direction: column;
-  width: 50vw;
+  width: 40vw;
   text-align: left;
 `;
 const SubmitTitle = styled.p`

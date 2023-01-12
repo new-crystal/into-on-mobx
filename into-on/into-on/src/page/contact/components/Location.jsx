@@ -58,7 +58,7 @@ const Container = styled.div`
   justify-content: right;
   flex-direction: column;
   text-align: right;
-  width: 50vw;
+  width: 40vw;
   margin-right: 30px;
 `;
 const MapTitle = styled.p`

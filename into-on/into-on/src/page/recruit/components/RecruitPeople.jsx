@@ -48,7 +48,7 @@ const Container = styled.div`
   flex-direction: row;
   text-align: left;
   max-width: 1200px;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-left: 130px;
 `;
 

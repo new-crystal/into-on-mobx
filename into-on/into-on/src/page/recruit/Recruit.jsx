@@ -1,12 +1,18 @@
 import RecruitPeopleText from "./components/RecruitPeopleText";
 import styled from "styled-components";
 import RecruitPeople from "./components/RecruitPeople";
+import RecruitPlayers from "./components/RecruitPlayers";
+import RecruitTeams from "./components/RecruitTeams";
+import RecruitExplain from "./components/RecruitExplain";
 
 const Recruit = () => {
   return (
     <Container>
       <RecruitPeopleText />
       <RecruitPeople />
+      <RecruitPlayers />
+      <RecruitTeams />
+      <RecruitExplain />
     </Container>
   );
 };
