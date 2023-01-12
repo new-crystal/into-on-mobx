@@ -2,6 +2,7 @@ import MapBox from "./components/MapBox";
 import Location from "./components/Location";
 import styled from "styled-components";
 import { useState } from "react";
+import SubmitText from "./components/SubmitText";
 
 const Contact = () => {
   const [position, setPosition] = useState(false);
@@ -11,6 +12,7 @@ const Contact = () => {
       <MapBox position={position} />
       <TextContainer>
         <Location position={position} setPosition={setPosition} />
+        <SubmitText />
       </TextContainer>
     </>
   );

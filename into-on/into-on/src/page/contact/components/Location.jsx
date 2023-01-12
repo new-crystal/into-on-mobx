@@ -3,23 +3,19 @@ import styled from "styled-components";
 const Location = ({ position, setPosition }) => {
   return (
     <Container>
-      <MapTitle>
-        DESIGN STUDIO & SEOUL OFFICE
-        <SeoulMapBtn onClick={() => setPosition(!position)} position={position}>
-          ⌖
-        </SeoulMapBtn>
-      </MapTitle>
+      <MapTitle>DESIGN STUDIO & SEOUL OFFICE</MapTitle>
+      <SeoulMapBtn onClick={() => setPosition(!position)} position={position}>
+        ⌖
+      </SeoulMapBtn>
       <MapText>
         서울특별시 용산구 백범로 341 금호리첸시아 A블록
         <br></br>
         T. +82 2 2285 2506
       </MapText>
-      <MapTitle>
-        EXHIBITION & LOGISTICS CENTER
-        <MapBtn onClick={() => setPosition(!position)} position={position}>
-          ⌖
-        </MapBtn>
-      </MapTitle>
+      <MapTitle>EXHIBITION & LOGISTICS CENTER</MapTitle>
+      <MapBtn onClick={() => setPosition(!position)} position={position}>
+        ⌖
+      </MapBtn>
       <MapText>
         [김포본사]
         <br></br>
@@ -58,12 +54,15 @@ const Location = ({ position, setPosition }) => {
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: right;
   flex-direction: column;
   text-align: right;
+  width: 50vw;
+  margin-right: 30px;
 `;
 const MapTitle = styled.p`
+  width: 100%;
   color: #e61b39;
   font-size: 16px;
   margin-top: 10px;
@@ -71,7 +70,9 @@ const MapTitle = styled.p`
   font-weight: 400;
   letter-spacing: 0px;
   font-style: normal;
-  display: flex;
+  text-align: right;
+  position: relative;
+  right: 30px;
 `;
 const MapText = styled.p`
   font-weight: 400;
@@ -86,7 +87,7 @@ const SeoulMapBtn = styled.div`
   font-size: 20px;
   cursor: pointer;
   position: relative;
-  bottom: 4px;
+  bottom: 44px;
   :hover {
     color: #e61b39;
   }
@@ -96,7 +97,7 @@ const MapBtn = styled.div`
   font-size: 20px;
   cursor: pointer;
   position: relative;
-  bottom: 4px;
+  bottom: 44px;
   :hover {
     color: #e61b39;
   }
